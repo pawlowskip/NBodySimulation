@@ -22,7 +22,7 @@ case class Body(mass: Double, pos: Vector2D, v: Vector2D) {
 object Body {
   val G = 6.67e-11
 
-  def fastGroup(bodies: Seq[Body]): Body = {
+  def group(bodies: Seq[Body]): Body = {
     var x = 0.0
     var y = 0.0
     var m = 0.0
